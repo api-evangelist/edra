@@ -1,7 +1,26 @@
 aid: edra
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/edra.png
 name: Edra
-description: Edra is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Edra is an AI automation platform that analyzes an organization's existing
+  business data - tickets, logs, messages, and system records - to automatically discover
+  and document how operational processes actually run, then turns that knowledge into
+  workflows that AI agents can execute reliably. The company targets knowledge-intensive
+  functions such as IT service management and technical support, and integrates with
+  common enterprise systems including ServiceNow, JIRA, Zendesk, Salesforce, and Outlook.
+  Edra was surfaced as a portfolio company of 8vc and added to the API Evangelist network.
+  As of this enrichment pass Edra publishes a corporate marketing site but no public
+  developer API, documentation, SDKs, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/edra/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Artificial Intelligence
+- Automation
+- IT Service Management
+- Process Automation
+- AI Agents
+- Enterprise Software
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,14 @@ maintainers:
 common:
 - type: Website
   url: https://edra.ai
+- type: PrivacyPolicy
+  url: https://edra.ai/legal/privacy-policy
+- type: Support
+  url: mailto:support@edra.ai
+- type: DomainSecurity
+  url: security/edra-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
